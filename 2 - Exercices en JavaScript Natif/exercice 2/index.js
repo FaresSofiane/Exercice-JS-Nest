@@ -2,10 +2,10 @@ const liste_user = [
 
     {
         "id" : 1,
-        "name": "Sofiane",
+        "name": "Sofiane sofiane",
         "username": "Sofianef",
         "mail": "Sofianef@sofiane.f",
-        "age": 21,
+        "age": 15,
     },
     {
         "id" : 2,
@@ -23,3 +23,11 @@ const liste_user = [
     }
 ]
 
+function filtrage(liste, critere) {
+    return(liste.filter(critere))
+}
+
+
+console.log(filtrage(liste_user, element => element.name.includes("sofiane")))
+
+console.log(filtrage(liste_user, element => element.age > 20))
